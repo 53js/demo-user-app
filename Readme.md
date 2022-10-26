@@ -6,26 +6,30 @@ Avoir nodejs installé
 
 
 ``` bash
-yarn
+npm i
 ```
 
 
 ### run Client React
 
 ``` bash
-yarn start:client 
+npm start:client 
 ```
 
 ### run API
 
 ``` bash
-yarn start:api 
+npm start:api 
 ```
 
 
 ### add dependencies
 
 ``` bash
-yarn workspace <client|api> add <packageName>
+npm i <packageName> -w <client|api> 
 ```
 
+exemple : 
+```
+npm i client -w react-router-dom
+```
