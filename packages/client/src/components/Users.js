@@ -4,8 +4,10 @@ import { getAllUsers } from '../query/user';
 
 export const Users = () => {
 	const [user, setUser] = useState([]);
+	const [error, setError] = useState(null);
+
 	useEffect(() => {
-		getAllUsers().then((u) => setUser(u));
+		getAllUsers().then((u) => setUser(u)).catch((err) => setError(err));
 	}, []);
 
 	return (
@@ -18,6 +20,7 @@ export const Users = () => {
 					</li>
 				))}
 			</ul>
+			{error && <p>{error.message}</p>}
 		</section>
 	);
 };
