@@ -1,0 +1,23 @@
+{
+  "name": "demo-user-app",
+  "version": "0.0.1",
+  "description": "Demo & practice with NodeJS & ExpressJS & ReactJs",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start:client": "yarn workspace client start",
+    "start:api": "yarn workspace api start"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-53js": "^2.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-react": "7.31.10",
+    "eslint-plugin-react-hooks": "^4.1.2"
+  }
+}
