@@ -1,13 +1,1 @@
-[{
-	"id": 1,
-	"name": "John Doe"
-},
-{
-	"id": 2,
-	"name": "Jane Doe"
-},
-{
-	"id": 3,
-	"name": "John Smith"
-}
-]
+[{"firstName":"John","lastName":"douht","id":1},{"firstName":"Murhpy","lastName":"Cooper","id":2}]
