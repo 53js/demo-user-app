@@ -13,10 +13,15 @@ app.get('/', (req, res) => {
 	res.status(404).send('notFound');
 });
 
+// Middleware qui permet de parser les réquetes qui ont un body en JSON
+// https://expressjs.com/en/api.html#express.json
+
+app.use(express.json());
+
 app.use('/user', userAPI);
 
-// eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
+	// eslint-disable-next-line no-console
 	console.error(err.stack);
 	if (res.headersSent) {
 		return next(err);
