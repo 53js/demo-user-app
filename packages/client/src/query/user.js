@@ -1,7 +1,7 @@
 const { REACT_APP_API_URL } = process.env;
 const USER_API_PATH = '/user';
 
-export const getAllUsers = async () => {
+export const getAllUsersWithFetch = async () => {
 	const resp = await fetch(`${REACT_APP_API_URL}${USER_API_PATH}`,
 		{
 			method: 'GET',

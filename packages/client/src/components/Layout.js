@@ -1,0 +1,18 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Col, Row } from 'reactstrap';
+
+export const Layout = () => (
+	<Row className="w-100" tag="nav">
+		<Col>
+			<ul className="list-unstyled d-flex flex-row ">
+				<li className="me-4">
+					<Link to="/">Home</Link>
+				</li>
+				<li>
+					<Link to="/users">Users</Link>
+				</li>
+			</ul>
+		</Col>
+	</Row>
+);
