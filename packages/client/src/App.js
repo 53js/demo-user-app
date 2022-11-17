@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Container } from 'reactstrap';
 import { Layout } from './components/Layout';
 import { Screen404 } from './screen/404';
+import { ScreenDrawing } from './screen/Drawing';
 import { ScreenHome } from './screen/Home';
 import { ScreenUsers } from './screen/Users';
 
@@ -16,6 +17,7 @@ function App() {
 					<Routes>
 						<Route index element={<ScreenHome />} />
 						<Route path="/users" element={<ScreenUsers />} />
+						<Route path="/drawing" element={<ScreenDrawing />} />
 						<Route path="*" element={<Screen404 />} />
 					</Routes>
 				</BrowserRouter>

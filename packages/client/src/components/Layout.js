@@ -9,8 +9,11 @@ export const Layout = () => (
 				<li className="me-4">
 					<Link to="/">Home</Link>
 				</li>
-				<li>
+				<li className="me-4">
 					<Link to="/users">Users</Link>
+				</li>
+				<li>
+					<Link to="/drawing">Drawing</Link>
 				</li>
 			</ul>
 		</Col>
